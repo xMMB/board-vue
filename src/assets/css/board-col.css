@@ -1,0 +1,105 @@
+.md-card {
+	min-width: 300px;
+	max-width: 92%;
+	margin: 10px;
+}
+
+.md-card-header {
+	padding: 2px 16px!important;
+	margin-bottom: 0!important;
+}
+	
+.md-card .md-title {
+	font-size: 17px!important;
+	margin-top: 4px!important;
+}
+
+.md-card-content {
+	padding: 0!important;
+	background: linear-gradient(to top right, #448AFF 0%, #FF5252 100%);
+	min-height: 80px;
+}
+
+.md-content {
+	cursor: pointer;
+	border-radius: 5px;	
+	user-select: none;
+	transition: box-shadow 200ms ease-in-out;
+}
+
+.md-content:hover {
+	box-shadow: 0 4px 14px rgba(0, 0, 0, .3);
+}
+
+.md-content:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.md-content .text {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 15px;
+	padding: 8px 10px;
+	margin: 0;
+}
+
+.props {
+	display: none;
+	justify-content: flex-end;
+	padding: 0 6px 8px 10px;
+}
+
+.props.active {
+	display: flex;
+}
+
+.prop .md-icon {
+	color: rgba(68, 138, 255, .3)!important;
+	font-size: 17px!important;
+	padding-bottom: 3px;
+}
+
+.prop {
+	display: none;
+	border-radius: 25px;
+	padding: 2px 10px 0 6px;
+	background-color: rgba(117,117,117, .1);
+}
+
+.props.active.term .term {
+	display: block;
+}
+
+.props.active.list .list {
+	display: block;
+}
+
+.prop:not(:first-child) {
+	margin-left: 6px;
+}
+
+.prop span {
+	color: rgba(68, 138, 255, .6);
+	font-size: 14px;
+}
+
+.list-group {
+	padding: 14px;
+	min-height: 100px;
+}
+
+.status {
+	display: inline-block;
+	margin: 5px;
+	border-radius: 3px;
+	padding: 0 4px;
+}
+
+@media screen and (max-width: 480px) {
+
+	.md-card {
+		width: 300px;
+		min-width: auto;
+	}
+
+}

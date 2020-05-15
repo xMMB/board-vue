@@ -1,0 +1,27 @@
+.md-toolbar {
+	padding-left: 0!important;
+}
+	
+.title-text {
+	display: inline-block;
+	max-width: 100%;
+	line-height: 36px;
+	margin-top: 6px;
+	cursor: pointer;
+	border-radius: 2px;
+	user-select: none;
+	transition: .4s cubic-bezier(.4,0,.2,1);
+}
+
+.title-text .md-ripple {
+	padding: 0 12px;
+	text-overflow: ellipsis;
+}
+
+.title-text:hover {
+	background-color: rgba(255, 255, 255, .12);
+}
+
+.icon-btn {
+	margin-left: 16px;
+}
